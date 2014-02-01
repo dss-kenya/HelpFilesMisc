@@ -21,3 +21,21 @@ git fetch url_here_of_github_repo master and
 git pull url_here_of_github_repo master 
 
 push the files again to the repo on the server
+
+-------
+
+Committing updates to github
+
+Go to the local directory in the Github command shell
+Replace files inside the github working directory
+
+type:
+github add .
+
+new files will be added or modified
+
+type:
+github commit -m "message" to commit the files
+
+type:
+git push --set-upstream url_github_here master (this is to reflect the changes on the server)
