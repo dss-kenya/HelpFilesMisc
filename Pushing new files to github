@@ -1,0 +1,23 @@
+To create  a local git repo
+Open windows git application
+Create a new git repo by clicking on create
+Give the path, the name and create
+
+Paste the code or project into the folder containing .git that was just created above
+
+Open git command shell
+
+move to the folder that you just created
+type git commit -m 'initial commit', the files will be prepared 
+
+in order to add the files to the repo on github (ensure that a repo with the same name as the folder created exists)
+
+type git push url_here_of_github_repo master (in order to push all the files)
+
+if changes have been made on the server, before commiting the changes to github, pull the changes 
+
+try :
+git fetch url_here_of_github_repo master and
+git pull url_here_of_github_repo master 
+
+push the files again to the repo on the server
