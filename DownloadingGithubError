@@ -1,3 +1,7 @@
 When downloading github for windows an error might occur may be because of chrome browser or antivirus. Hence follow this link to resolve the issue:
 
 http://www.dimpost.com/2013/03/solved-error-occurred-trying-to.html
+
+if this download does not work, you can download git command shell for windows from this link:
+
+http://git-scm.com/book/en/Getting-Started-Installing-Git
