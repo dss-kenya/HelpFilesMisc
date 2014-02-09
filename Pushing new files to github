@@ -39,3 +39,6 @@ github commit -m "message" to commit the files
 
 type:
 git push --set-upstream url_github_here master (this is to reflect the changes on the server)
+
+
+<!-- Extra help ! Follow http://rogerdudler.github.io/git-guide/ -->
