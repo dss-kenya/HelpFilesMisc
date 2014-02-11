@@ -8,3 +8,6 @@ Preferences -> Android -> NDK -> folder
 
 2. Right click on the android project and select Android tools
 Add native support -> Finish
+
+Alternatively, you can create a jni folder using:
+https://thenewcircle.com/s/post/49/using_ndk_to_call_c_code_from_android_apps
