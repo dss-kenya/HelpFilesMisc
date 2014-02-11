@@ -1,0 +1,10 @@
+In order to create the first ndk android application
+
+follow :
+http://tools.android.com/recent/usingthendkplugin
+
+1. Set the path of ndk to the folder that contains the ndk
+Preferences -> Android -> NDK -> folder
+
+2. Right click on the android project and select Android tools
+Add native support -> Finish
