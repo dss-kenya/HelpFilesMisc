@@ -7,9 +7,10 @@ In the cpp file generated, type the following:
 
 #define APP_NAME "FirstAndroidNDKApp"
 
-JNIEXPORT jint Java_com_azilen_firstandroidndkproject_MainActivity_addTwoNumbers(jint x, jint y) {
-		__android_log_print(ANDROID_LOG_INFO,APP_NAME, "value of x : %d \n value of y : %d ",x,y);
-		return (x+y);
+JNIEXPORT jint JNICALL Java_com_azilen_firstandroidndkproject_MainActivity_addTwoNumbers(JNIEnv* env,
+			jobject jobj, jint x, jint y) {
+	__android_log_print(ANDROID_LOG_INFO,APP_NAME, "value of x : %d \nvalue of y : %d ",x,y);
+	return (x+y);
 }
 
 JNIEXPORT and JNICALL are values that are needed as a convention and for proper calling of JNI methods.
@@ -52,3 +53,16 @@ Java_com_package_name_activity_name_methodName. Also there should be no _ betwee
 2. Since a cpp method causes exceptions, wrap the code inside extern "c" block
 3. if the library name is "libProjectName".so, always call the library as System.loadLibrary("ProjectName"), 
 (do not add lib)
+4. Pass not only JNIENV* but also jobject
+5. JNIEXPORT jint Java_com_azilen_firstandroidndkproject_MainActivity_addTwoNumbers(jint x, jint y) {
+		__android_log_print(ANDROID_LOG_INFO,APP_NAME, "value of x : %d \n value of y : %d ",x,y);
+		return (x+y);
+} ->>> this will cause dummy values to be received.
+
+
+REFERENCES:
+
+1. http://stackoverflow.com/a/4629747/2683275
+2. http://stackoverflow.com/a/19983847/2683275
+3. http://stackoverflow.com/a/20812382/2683275
+4. http://stackoverflow.com/q/16323250/2683275
